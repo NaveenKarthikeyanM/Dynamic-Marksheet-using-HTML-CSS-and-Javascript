@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Marksheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="top">
+                <p style="font-weight: bolder;">Sr. No. <span style="color: red;">0000000</span></p>
+                <img src="logo.jpg" alt="LOGO" height="150">
+                <img src="QR.png" alt="MY QR" height="150">
+            </div>
+            <div class="clg">
+                <h2>HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+                <h3>An Autonomous Institution Recognized by Government of India</h3>
+            </div>
+            <div class="marksheet">
+                <h1 style="color: gold;">Annual Statements of Marks</h1>
+                <table>
+                    <tr>
+                        <th>Name of the Candidate:</th>
+                        <td>NAVEEN KARTHIKEYAN M</td>
+                        <th>Branch Name</th>
+                        <td>B.Tech Information Technology</td>
+                    </tr>
+                    <tr>
+                        <th>Reg. No:</th>
+                        <td>720721110098</td>
+                        <th>Enrollment No:</th>
+                        <td><input type="text" id="enrollNo"></td>
+                    </tr>
+                    <tr>
+                        <th>Authorized Training Centre Name with Code</th>
+                        <td colspan="3">HICET <br> 456321</td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <th>Subject Code</th>
+                        <th>Subject Name</th>
+                        <th>Theory</th>
+                        <th>Practical</th>
+                        <th>Total</th>
+                        <th>In Words</th>
+                    </tr>
+                    <tr>
+                        <td>21IT7201</td>
+                        <td>Introduction to Cloud Computing</td>
+                        <td><input type="number" class="theory" max="80"></td>
+                        <td><input type="number" class="practical" max="20"></td>
+                        <td class="total"></td>
+                        <td class="words"></td>
+                    </tr>
+                    <tr>
+                        <td>21IT7202</td>
+                        <td>Data Science and Analytics</td>
+                        <td><input type="number" class="theory" max="80"></td>
+                        <td><input type="number" class="practical" max="20"></td>
+                        <td class="total"></td>
+                        <td class="words"></td>
+                    </tr>
+                    <tr>
+                        <td>21IT7203</td>
+                        <td>Software Testing and Quality Assurance</td>
+                        <td><input type="number" class="theory" max="80"></td>
+                        <td><input type="number" class="practical" max="20"></td>
+                        <td class="total"></td>
+                        <td class="words"></td>
+                    </tr>
+                    <tr>
+                        <td>21IT7204</td>
+                        <td>Principles of Management</td>
+                        <td><input type="number" class="theory" max="80"></td>
+                        <td><input type="number" class="practical" max="20"></td>
+                        <td class="total"></td>
+                        <td class="words"></td>
+                    </tr>
+                    <tr>
+                        <td>21IT7205</td>
+                        <td>Internet of Things</td>
+                        <td><input type="number" class="theory" max="80"></td>
+                        <td><input type="number" class="practical" max="20"></td>
+                        <td class="total"></td>
+                        <td class="words"></td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td>Grand Total:</td>
+                        <td><span id="grandTotal">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>In Words:</td>
+                        <td id="totalInWords">Zero</td>
+                    </tr>
+                    <tr>
+                        <td>Month and Year of Examination:</td>
+                        <td>June 2024</td>
+                    </tr>
+                    <tr>
+                        <td>No. of Subjects Offered:</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Result:</td>
+                        <td id="result">-</td>
+                    </tr>
+                    <tr>
+                        <td>Percentage:</td>
+                        <td><span id="percentage">0%</span></td>
+                    </tr>
+                    <tr>
+                        <td>Grade:</td>
+                        <td><span id="grade">-</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bottom">
+                <p style="font-weight: bolder;">Date: <span style="color: red;">01-08-2024</span></p>
+                <h4>Deputy Controller of Examination</h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
